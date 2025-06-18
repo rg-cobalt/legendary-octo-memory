@@ -7,7 +7,7 @@ main = Blueprint('main', __name__)
 @main.route("/login", methods=["POST"])
 def login():
     username = request.form.get("username")
-    password = request.form.get("password")
+    password = request.form.get("passwword")
 
     # SQL Injection
     conn = sqlite3.connect("users.db")
